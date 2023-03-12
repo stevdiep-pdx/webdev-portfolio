@@ -85,9 +85,9 @@
         <h1>Hi, I am Steven!</h1>
         <p>CS Student at Portland State University</p>
       </div>
-      <section>
+      <section id="about">
         <h2>About</h2>
-        <div class="px-4" id="about">
+        <div class="px-4">
           <p>
             Hello! My name is Steven Diep and I am an undergraduate student
             majoring in Computer Science at Portland State University.
@@ -118,97 +118,156 @@
       </section>
 
       <!-- Work History -->
-      <section>
+      <section id="experience">
+        <h2>Education</h2>
+        <div class="px-4">
+          <h3>Portland State University</h3>
+          <p class="dates">BS in Computer Science, Anticipated June 2024</p>
+          <p class="description">
+            Relevant Courses: Data Structures, Programming Systems, Computer
+            Systems, Intro to Operating Systems, Elementary Software
+            Engineering, Introduction to Web Developement, Introduction to
+            Database Management Systems, Algorithms and Complexity
+          </p>
+        </div>
+
         <h2>Experience</h2>
-        <div class="px-4" id="experience">
+        <div class="px-4">
           <h3>Student Grader</h3>
-          <p class="job-dates">
-            Portland State University, October 2022 - Present
-          </p>
-          <p class="job-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-            odio. Veniam voluptate ex totam quas. Nam architecto voluptatum non
-            sit suscipit illo provident. Illo natus fuga facere tenetur hic.
-            Magnam.
-          </p>
+          <p class="dates">Portland State University, October 2022 - Present</p>
+          <ul class="description">
+            <li>
+              Regularly graded assignments and provided detailed feedback to 15+
+              students for the CS162 course
+            </li>
+            <li>
+              Coordinated with other graders and professor to create a
+              consistent grading standard across classes
+            </li>
+          </ul>
 
           <h3>Code Camp Intern</h3>
-          <p class="job-dates">CAL Charter, June 2019</p>
-          <p class="job-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-            odio. Veniam voluptate ex totam quas. Nam architecto voluptatum non
-            sit suscipit illo provident. Illo natus fuga facere tenetur hic.
-            Magnam.
-          </p>
+          <p class="dates">CAL Charter, June 2019</p>
+          <ul class="description">
+            <li>
+              Assisted with lesson plans and provided support to summer camp
+              faculty to ensure adequate supervision over 40+ students over the
+              duration of the camp
+            </li>
+            <li>
+              Collaborated with summer camp faculty to introduce students to
+              programming-related topics
+            </li>
+          </ul>
 
           <h3>Volunteer Instructor</h3>
-          <p class="job-dates">FreeGeek, Febuary 2019 - October 2019</p>
-          <p class="job-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-            odio. Veniam voluptate ex totam quas. Nam architecto voluptatum non
-            sit suscipit illo provident. Illo natus fuga facere tenetur hic.
-            Magnam.
-          </p>
+          <p class="dates">FreeGeek, Febuary 2019 - October 2019</p>
+          <ul class="description">
+            <li>
+              Taught linux command line course for a total of 20+ students
+              across five sessions while ensuring the course material was
+              concise and easy to understand
+            </li>
+          </ul>
         </div>
       </section>
 
       <!-- Projects -->
-      <section>
+      <section id="projects">
         <h2>Projects</h2>
-        <div id="projects">
-          <div class="project-container">
-            <div class="card bg-light project">
-              <h3 class="card-header">Project 1</h3>
-              <div class="card-body">
-                <h3 class="card-title">Hangman Bot</h3>
-                <p class="card-text">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Nostrum provident quae pariatur ullam culpa sunt distinctio
-                  consequatur placeat aspernatur, ex harum perspiciatis ad
-                  accusamus sit nulla, laborum, sequi esse eum?
-                </p>
-                <a class="btn btn-primary project-link" href="#"
-                  >Visit Project</a
-                >
-              </div>
+        <div class="project-container">
+          <div class="card bg-light project">
+            <h3 class="card-header">Hangman Bot</h3>
+            <div class="card-body">
+              <p class="card-text">
+                Coded in Python, this is a Discord Bot that can host Hangman
+                games in your servers!
+              </p>
+              <p class="card-text">
+                Members of your server can create games, make their own word
+                banks, and more with this bot!
+              </p>
+              <a
+                class="btn btn-primary project-link"
+                href="https://github.com/steven-diep/hangman_bot"
+              >
+                Visit Project <i class="bi bi-link-45deg"></i>
+              </a>
             </div>
+          </div>
 
-            <div class="card bg-light project">
-              <h3 class="card-header">Project 2</h3>
-              <div class="card-body">
-                <h3 class="card-title">Quicksort</h3>
-                <p class="card-text">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex
-                  neque, recusandae quae quod ad reiciendis distinctio quos
-                  quam, itaque tempore saepe fugit voluptate et eligendi
-                  tempora? Necessitatibus quasi unde culpa.
-                </p>
-                <a class="btn btn-primary project-link" href="#"
-                  >Visit Project</a
-                >
-              </div>
+          <div class="card bg-light project">
+            <h3 class="card-header">Quicksort</h3>
+            <div class="card-body">
+              <p class="card-text">
+                This is my implementation of quicksort in C that I did for my
+                algorithms class.
+              </p>
+              <p class="card-text">
+                Just enter an array size and this program will randomly generate
+                an array of elements that it will sort.
+              </p>
+              <a
+                class="btn btn-primary project-link"
+                href="https://github.com/stevdiep-pdx/quicksort"
+              >
+                Visit Project <i class="bi bi-link-45deg"></i>
+              </a>
             </div>
           </div>
         </div>
       </section>
 
       <!-- Contact -->
-      <section>
-        <h2>Contact Me</h2>
-        <form action="" id="contact">
-          <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-            voluptates quas possimus quasi eius consequuntur nihil velit ipsum
-            numquam tenetur, porro ducimus, corrupti, rem nostrum. Odio quas
-            neque vero officia.
+      <section id="contact">
+        <h2>Contact</h2>
+        <form class="bg-light border rounded p-4 mx-4" action="">
+          <div class="form-group row">
+            <!-- Name -->
+            <div class="col-12 col-md-6 mb-4">
+              <label for="name" class="col-form-label">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-control"
+                placeholder="Name"
+              />
+            </div>
+
+            <!-- Email -->
+            <div class="col-12 col-md-6 mb-4">
+              <label for="email" class="col-form-label">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control"
+                placeholder="Email"
+              />
+            </div>
+          </div>
+
+          <!-- Message -->
+          <div class="form-group mb-4">
+            <label for="message" class="col-form-label">Message</label>
+            <textarea
+              class="form-control"
+              name="message"
+              id="message"
+              rows="3"
+              placeholder="Leave a message"
+            ></textarea>
+          </div>
+
+          <!-- Submit -->
+          <div class="text-center">
+            <button type="submit" value="Submit" class="btn btn-primary">
+              Send
+            </button>
           </div>
         </form>
       </section>
     </main>
-
-    <!-- Footer -->
-    <footer class="bg-dark">
-      <p>Copyright</p>
-    </footer>
   </body>
 </html>

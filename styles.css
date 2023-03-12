@@ -14,12 +14,12 @@ section {
 /* Introduction */
 
 /* Experience */
-.job-description {
+.description {
   padding-bottom: 15px;
   border-bottom: 1px solid var(--gray);
 }
 
-.job-dates {
+.dates {
   color: var(--lightblue);
 }
 
