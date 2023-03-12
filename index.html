@@ -41,7 +41,9 @@
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md bg-transparent pr-5">
-      <p class="navbar-brand ms-3 my-auto">Steven Diep</p>
+      <p class="navbar-brand ms-3 my-auto">
+        Steven <span class="text-primary">Diep</span>
+      </p>
 
       <!-- Hamburger button to toggle navbar when the screen is small -->
       <button
@@ -56,34 +58,36 @@
         <i class="bi bi-list"></i>
       </button>
 
-      <!-- Collapsable navbar -->
+      <!-- Collapsable Navbar -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto me-2">
           <li class="nav-item">
-            <a href="#about" class="nav-link">About</a>
+            <a href="#about" class="nav-link ps-3">About</a>
           </li>
           <li class="nav-item">
-            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#experience" class="nav-link ps-3">Experience</a>
           </li>
           <li class="nav-item">
-            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#projects" class="nav-link ps-3">Projects</a>
           </li>
           <li class="nav-item">
-            <a href="#contact" class="nav-link">Contact Me</a>
+            <a href="#contact" class="nav-link ps-3">Contact Me</a>
           </li>
         </ul>
       </div>
     </nav>
 
-    <main class="container">
-      <!-- Introduction -->
-      <section id="about" class="intro p-5">
-        <div>
-          <h1>Steven Diep</h1>
-          <p>Computer Science Student</p>
-        </div>
+    <!-- Header -->
 
-        <section class="col-12 mt-5">
+    <main class="container test2">
+      <!-- Introduction -->
+      <div class="p-4">
+        <h1>Hi, I am Steven!</h1>
+        <p>CS Student at Portland State University</p>
+      </div>
+      <section>
+        <h2>About</h2>
+        <div class="px-4" id="about">
           <p>
             Hello! My name is Steven Diep and I am an undergraduate student
             majoring in Computer Science at Portland State University.
@@ -110,41 +114,101 @@
           <p>
             After my graduation next year, I hope to become a software engineer.
           </p>
-        </section>
+        </div>
       </section>
 
       <!-- Work History -->
-      <h2>Experience</h2>
-      <div id="experience">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-          dignissimos ipsam dicta, voluptate quia reiciendis reprehenderit
-          laudantium magni ab veniam sed libero maiores quam facere. Odio quod
-          consequuntur minus neque?
-        </p>
-      </div>
+      <section>
+        <h2>Experience</h2>
+        <div class="px-4" id="experience">
+          <h3>Student Grader</h3>
+          <p class="job-dates">
+            Portland State University, October 2022 - Present
+          </p>
+          <p class="job-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+            odio. Veniam voluptate ex totam quas. Nam architecto voluptatum non
+            sit suscipit illo provident. Illo natus fuga facere tenetur hic.
+            Magnam.
+          </p>
+
+          <h3>Code Camp Intern</h3>
+          <p class="job-dates">CAL Charter, June 2019</p>
+          <p class="job-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+            odio. Veniam voluptate ex totam quas. Nam architecto voluptatum non
+            sit suscipit illo provident. Illo natus fuga facere tenetur hic.
+            Magnam.
+          </p>
+
+          <h3>Volunteer Instructor</h3>
+          <p class="job-dates">FreeGeek, Febuary 2019 - October 2019</p>
+          <p class="job-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+            odio. Veniam voluptate ex totam quas. Nam architecto voluptatum non
+            sit suscipit illo provident. Illo natus fuga facere tenetur hic.
+            Magnam.
+          </p>
+        </div>
+      </section>
 
       <!-- Projects -->
-      <h2>Projects</h2>
-      <div id="projects">
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor
-          doloremque consequuntur similique delectus architecto enim provident
-          odit inventore dolore, aut excepturi laborum obcaecati dolores minima
-          ab vel qui ducimus vitae?
-        </p>
-      </div>
+      <section>
+        <h2>Projects</h2>
+        <div id="projects">
+          <div class="project-container">
+            <div class="card bg-light project">
+              <h3 class="card-header">Project 1</h3>
+              <div class="card-body">
+                <h3 class="card-title">Hangman Bot</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Nostrum provident quae pariatur ullam culpa sunt distinctio
+                  consequatur placeat aspernatur, ex harum perspiciatis ad
+                  accusamus sit nulla, laborum, sequi esse eum?
+                </p>
+                <a class="btn btn-primary project-link" href="#"
+                  >Visit Project</a
+                >
+              </div>
+            </div>
+
+            <div class="card bg-light project">
+              <h3 class="card-header">Project 2</h3>
+              <div class="card-body">
+                <h3 class="card-title">Quicksort</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex
+                  neque, recusandae quae quod ad reiciendis distinctio quos
+                  quam, itaque tempore saepe fugit voluptate et eligendi
+                  tempora? Necessitatibus quasi unde culpa.
+                </p>
+                <a class="btn btn-primary project-link" href="#"
+                  >Visit Project</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- Contact -->
-      <h2>Contact Me</h2>
-      <form action="" id="contact">
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-          voluptates quas possimus quasi eius consequuntur nihil velit ipsum
-          numquam tenetur, porro ducimus, corrupti, rem nostrum. Odio quas neque
-          vero officia.
-        </div>
-      </form>
+      <section>
+        <h2>Contact Me</h2>
+        <form action="" id="contact">
+          <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+            voluptates quas possimus quasi eius consequuntur nihil velit ipsum
+            numquam tenetur, porro ducimus, corrupti, rem nostrum. Odio quas
+            neque vero officia.
+          </div>
+        </form>
+      </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark">
+      <p>Copyright</p>
+    </footer>
   </body>
 </html>

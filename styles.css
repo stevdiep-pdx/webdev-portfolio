@@ -1,3 +1,42 @@
-/* Navbar */
+/* General Formatting */
+:root {
+  --white: #ffffff;
+  --black: #080808;
+  --gray: #616161;
+
+  --lightblue: #0071e5;
+}
+
+section {
+  margin-bottom: 80px;
+}
 
 /* Introduction */
+
+/* Experience */
+.job-description {
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--gray);
+}
+
+.job-dates {
+  color: var(--lightblue);
+}
+
+/* Projects */
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  width: 250px;
+  margin: 20px auto;
+  padding-bottom: 50px;
+}
+
+.project-link {
+  position: absolute;
+  bottom: 15px;
+}
