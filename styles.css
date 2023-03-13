@@ -54,6 +54,7 @@ section {
   left: 10%;
   top: 50%;
   transform: translateY(-50%);
+  user-select: none;
 }
 
 /* Introduction */
