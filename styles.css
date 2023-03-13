@@ -4,14 +4,63 @@
   --black: #080808;
   --gray: #616161;
 
-  --lightblue: #0071e5;
+  --sky-blue: #0071e5;
+  --blue: #0002d1;
+
+  --red: #da0000;
 }
 
 section {
   margin-bottom: 80px;
 }
 
+.bold {
+  font-weight: 600;
+}
+
+@media (max-width: 576px) {
+  /* Some elements will only be optional and will be hidden when the screen size is small to avoid large walls of text */
+  .optional {
+    display: none;
+  }
+
+  /* When the screen size is small, add some spacing between the headshot and introduction */
+  .introduction {
+    padding-top: 25px;
+  }
+}
+
+/* Navbar */
+.brand {
+  color: var(--sky-blue);
+}
+
+/* Banner */
+.banner {
+  padding: 20px;
+  margin-bottom: 80px;
+  height: 300px;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--sky-blue),
+    var(--blue)
+  );
+  color: var(--white);
+}
+
+.banner-info {
+  display: inline-block;
+  position: relative;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 /* Introduction */
+.headshot {
+  border: 5px solid var(--black);
+  border-radius: 20%;
+}
 
 /* Experience */
 .description {
@@ -20,7 +69,7 @@ section {
 }
 
 .dates {
-  color: var(--lightblue);
+  color: var(--sky-blue);
 }
 
 /* Projects */
@@ -39,4 +88,12 @@ section {
 .project-link {
   position: absolute;
   bottom: 15px;
+}
+
+/* Contact */
+.error {
+  display: none;
+  background-color: var(--red);
+  color: var(--white);
+  text-align: center;
 }

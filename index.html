@@ -42,7 +42,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md bg-transparent pr-5">
       <p class="navbar-brand ms-3 my-auto">
-        Steven <span class="text-primary">Diep</span>
+        Steven <span class="brand">Diep</span>
       </p>
 
       <!-- Hamburger button to toggle navbar when the screen is small -->
@@ -78,59 +78,77 @@
     </nav>
 
     <!-- Header -->
-
-    <main class="container test2">
-      <!-- Introduction -->
-      <div class="p-4">
+    <header class="banner">
+      <div class="banner-info">
         <h1>Hi, I am Steven!</h1>
         <p>CS Student at Portland State University</p>
       </div>
+    </header>
+
+    <main class="container">
+      <!-- Introduction -->
       <section id="about">
         <h2>About</h2>
-        <div class="px-4">
-          <p>
-            Hello! My name is Steven Diep and I am an undergraduate student
-            majoring in Computer Science at Portland State University.
-          </p>
+        <div class="px-4 row">
+          <div class="col-12 col-md-3 my-auto text-center">
+            <img
+              class="headshot my-auto"
+              src="images/steven.jpg"
+              alt="Headshot of Steven Diep"
+              width="200"
+            />
+          </div>
 
-          <p>
-            I have previously worked at CAL Charter as an intern for their
-            Summer Coding Camp and currently work as a student grader for the
-            computer sciences classes at Portland State University. During my
-            time working in these positions, I got to apply my knowledge of
-            computer science and programming and helped other students succeed
-            in their studies. This summer, I will be working as a software
-            engineering intern.
-          </p>
+          <div class="introduction col-12 col-md-9">
+            <p>
+              Hello! My name is Steven Diep and I am an undergraduate student
+              majoring in Computer Science at Portland State University.
+            </p>
 
-          <p>
-            In addition to my work experience, I have created many projects in
-            my free time and for my courses. One of which is a Discord bot that
-            can host hangman games across many different servers. Through my
-            coursework and projects, I have gained experience working with
-            C/C++, Python, Java, and SQL.
-          </p>
+            <p>
+              I have previously worked at CAL Charter as an intern for their
+              Summer Coding Camp and currently work as a student grader for the
+              computer sciences classes at Portland State University. During my
+              time working in these positions, I got to apply my knowledge of
+              computer science and programming and helped other students succeed
+              in their studies. This summer, I will be working as a software
+              engineering intern.
+            </p>
 
-          <p>
-            After my graduation next year, I hope to become a software engineer.
-          </p>
+            <p class="optional">
+              In addition to my work experience, I have created many projects in
+              my free time and for my courses. One of which is a Discord bot
+              that can host hangman games across many different servers. Through
+              my coursework and projects, I have gained experience working with
+              C/C++, Python, Java, and SQL.
+            </p>
+
+            <p>
+              After my graduation next year, I hope to become a software
+              engineer.
+            </p>
+          </div>
         </div>
       </section>
 
-      <!-- Work History -->
+      <!-- Education and Experience -->
       <section id="experience">
+        <!-- Education -->
         <h2>Education</h2>
         <div class="px-4">
           <h3>Portland State University</h3>
           <p class="dates">BS in Computer Science, Anticipated June 2024</p>
-          <p class="description">
-            Relevant Courses: Data Structures, Programming Systems, Computer
-            Systems, Intro to Operating Systems, Elementary Software
-            Engineering, Introduction to Web Developement, Introduction to
-            Database Management Systems, Algorithms and Complexity
+          <p class="optional">
+            <span class="bold">Relevant Courses:</span> Data Structures,
+            Programming Systems, Computer Systems, Intro to Operating Systems,
+            Elementary Software Engineering, Introduction to Web Developement,
+            Introduction to Database Management Systems, Algorithms and
+            Complexity
           </p>
+          <p class="description"><span class="bold">GPA:</span> 4.0 GPA</p>
         </div>
 
+        <!-- Work History -->
         <h2>Experience</h2>
         <div class="px-4">
           <h3>Student Grader</h3>
@@ -222,6 +240,9 @@
       <section id="contact">
         <h2>Contact</h2>
         <form class="bg-light border rounded p-4 mx-4" action="">
+          <p class="error" id="error">
+            <i class="bi bi-exclamation-triangle-fill"></i> Invalid Input
+          </p>
           <div class="form-group row">
             <!-- Name -->
             <div class="col-12 col-md-6 mb-4">
