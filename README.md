@@ -22,6 +22,7 @@ Below is a list of all of the sources I used in the making this of project.
 * https://icons.getbootstrap.com/#install 
 * https://youtu.be/ulM3-nRABgk
 * https://www.freecodecamp.org/news/css-vertical-align-how-to-center-a-div-text-or-an-image-example-code/ 
+* https://www.w3schools.com/tags/tag_textarea.asp 
 
 
 ## License
